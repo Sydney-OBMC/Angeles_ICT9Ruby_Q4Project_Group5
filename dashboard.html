@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT PROJECT Q4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-image: url(BG.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layout{
+            display: flex;
+        }
+
+        .sidebar{
+            width: 240px;
+            background: linear-gradient(to bottom, #111827, #1f2937);
+            color: white;
+            padding: 25px;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+        }
+
+        .sidebar a{
+            text-decoration: none;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 12px 15px;
+            border-radius: 10px;
+            transition: 0.3s ease;
+        }
+
+        .sidebar a:hover{
+            background: rgba(255,255,255,0.1);
+            color: #93c5fd;
+            transform: translateX(5px);
+        }
+
+        .sidebar .active{
+            background: rgba(255,255,255,0.1);
+            color: #93c5fd;
+        }
+
+        .logo{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 20px auto;
+            border: 3px solid white;
+        }
+
+        .main{
+            flex: 1;
+            padding: 20px;
+            padding-bottom: 80px;
+        }
+
+        .card{
+            background: white;
+            border-radius: 15px;
+            max-width: 850px;
+        }
+
+        .title{
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+
+        .title h1{
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #222;
+            margin: 0;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .title h1::after{
+            content: "";
+            width: 80px;
+            height: 4px;
+            background: #333;
+            display: block;
+            margin: 10px auto 0;
+            border-radius: 10px;
+        }
+
+        .title p{
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .simple-footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 1px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        background-color: #f5f5f5;
+        border-top: 2px solid #ddd;
+        color: #333;
+        z-index: 1000;
+    }
+
+    .simple-footer p{
+        margin: 4px 0;
+    }
+    </style>
+</head>
+
+<body>
+<div class="layout">
+
+    <nav class="sidebar">
+        <div class="text-center mb-4">
+            <img src="LOGO.jpg" class="logo">
+        </div>
+
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="notebooks.html">Virtual Notebooks</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="profile.html">Profile</a>
+
+        <a class="btn w-100 mt-3" href="index.html">Logout</a>
+    </nav>
+
+    <main class="main">
+        <div class="title">
+            <h1>DASHBOARD</h1>
+            <p>Overview of your activities.</p>
+        </div>
+
+        <br>
+        <br>
+
+    <div class="d-flex justify-content-center">
+            <div class="card shadow-sm p-4 w-100" style="max-width: 850px;">
+            <h4 class="text-info">Information and Communications Technology</h4>
+            <h5 class="text-secondary mb-4">The Curriculum</h5>
+
+            <ul class="list-group list-group-flush">
+
+                <li class="list-group-item">
+                    <strong>I. 1st Quarter</strong>
+                    <ul class="mt-2">
+                        <li>Introduction to HTML</li>
+                        <li>Basic CSS Styling</li>
+                    </ul>
+                </li>
+
+                <li class="list-group-item">
+                    <strong>II. 2nd Quarter</strong>
+                    <ul class="mt-2">
+                        <li>Introduction to Bootstrap</li>
+                        <li>Bootstrap with Forms</li>
+                    </ul>
+                </li>
+
+                <li class="list-group-item">
+                    <strong>III. 3rd Quarter</strong>
+                    <ul class="mt-2">
+                        <li>Introduction to JavaScript</li>
+                        <li>Functions and Events</li>
+                    </ul>
+                </li>
+
+                <li class="list-group-item">
+                    <strong>IV. 4th Quarter</strong>
+                    <ul class="mt-2">
+                        <li>Conditional Statements</li>
+                        <li>Iteration Statements</li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            </div>
+        </div>
+
+    </main>
+
+</div>
+
+<footer class="simple-footer">
+    <p>Sydney de Leon, Cassey Mallari, Casey Canlas</p>
+    <p>Grade & Section: Grade 9 - Ruby</p>
+</footer>
+
+</body>
+</html>

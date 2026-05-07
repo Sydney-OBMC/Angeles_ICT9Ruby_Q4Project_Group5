@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ICT PROJECT Q4</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css " rel="stylesheet">
+</head>
+<body>
+<style>
+    body{
+        margin:0;
+        font-family: Arial, sans-serif;
+        display:flex;
+        background-image: url(BG.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .sidebar{
+        width: 240px;
+        background: linear-gradient(to bottom, #111827, #1f2937);
+        color: white;
+        padding: 25px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .sidebar a{
+        text-decoration: none;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        color: white;
+        padding: 12px 15px;
+        border-radius: 10px;
+        transition: 0.3s ease;
+    }
+
+    .sidebar a:hover{
+        background: rgba(255,255,255,0.1);
+        color: #93c5fd;
+        transform: translateX(5px);
+    }
+
+    .sidebar .active{
+        background: rgba(255,255,255,0.1);
+        color: #93c5fd;
+    }
+
+    .logo{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto 20px auto;
+        border: 3px solid white;
+    }
+
+    .main{
+        flex:1;
+        padding:20px;
+    }
+
+    .title-box{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .title{
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #222;
+        margin: 0;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .subtitle{
+        font-size: 1rem;
+        color: #666;
+    }
+
+    .grid{
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap:20px;
+    }
+
+    .card{
+        background:white;
+        padding:20px;
+        border-radius:10px;
+        box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .card h2{
+        margin-top:0;
+    }
+
+    .card p{
+        color:gray;
+        font-size:14px;
+    }
+
+    button{
+        width:100%;
+        padding:10px;
+        border:none;
+        background:skyblue;
+        color:white;
+        border-radius:5px;
+        cursor:pointer;
+    }
+
+    button:hover{
+        background:deepskyblue;
+    }
+
+    .title{
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    .title h1{
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #222;
+        margin: 0;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .title h1::after{
+        content: "";
+        width: 80px;
+        height: 4px;
+        background: #333;
+        display: block;
+        margin: 10px auto 0;
+        border-radius: 10px;
+    }
+
+    .title p{
+        margin-top: 10px;
+        font-size: 1rem;
+        color: #666;
+    }
+
+    .simple-footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 1px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        background-color: #f5f5f5;
+        border-top: 2px solid #ddd;
+        color: #333;
+        z-index: 1000;
+    }
+
+    .simple-footer p{
+        margin: 4px 0;
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <img src="LOGO.jpg" class="logo">
+
+        <a href="dashboard.html">Dashboard</a>
+        <a href="notebooks.html">Virtual Notebooks</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="profile.html">Profile</a>
+        <a href="index.html">Logout</a>
+
+    </div>
+
+    <div class="main">
+
+        <div class="title-box">
+
+            <div class="title">
+                <h1>TASKS</h1>
+            </div>
+
+            <div class="subtitle">
+                Choose a task.
+            </div>
+
+        </div>
+
+        <div class="grid">
+
+            <div class="card">
+                <h2>Mathematics</h2>
+
+                <h4>Drill Sheet 2</h4>
+
+                <p>Deadline: April 9, 2026 | 10:00 AM</p>
+
+                <button>Take this activity</button>
+            </div>
+
+            <div class="card">
+                <h2>Science</h2>
+
+                <h4>Lab Activity 3</h4>
+
+                <p>Deadline: April 10, 2026 | 11:00 AM</p>
+
+                <button>Take this activity</button>
+            </div>
+
+            <div class="card">
+                <h2>ICT</h2>
+
+                <h4>Quarter Project</h4>
+
+                <p>Deadline: May 8, 2026 | 2:30 PM</p>
+
+                <button>Submit</button>
+            </div>
+
+            <div class="card">
+                <h2>VE</h2>
+
+                <h4>Film Critique</h4>
+
+                <p>Deadline: April 22, 2026 | 8:00 AM</p>
+
+                <button>Play Video Clip</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="simple-footer">
+        <p>Sydney de Leon, Cassey Mallari, Casey Canlas</p>
+        <p>Grade & Section: Grade 9 - Ruby</p>
+    </footer>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js "></script>
+</body>
+</html>
